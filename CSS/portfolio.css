@@ -329,7 +329,7 @@ footer {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 1.6%;
-    height: 500px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    height: fit-content; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the left columns */
 }
 
@@ -354,7 +354,7 @@ footer {
     position: fixed; /* The element is positioned relative to the viewport and stays in the same location no matter what */
     bottom: 1.75vw; /* Positions the button slightly up from the bottom of the viewport */
     right: 1.75vw; /* Positions the viewport slightly right from the side of the viewport */
-    width: 25vw; /* Sets the width relative to the viewport width */
+    width: 15vw; /* Sets the width relative to the viewport width */
     background-color: white; /* Sets the background color of the button to white */
     color: black; /* Sets the color of the button text to black */
     border: solid black; /* This makes a solid black border around the button */
@@ -450,6 +450,8 @@ button:hover, .form-container .btn:hover {
 #footer {
     background-color: #000000;
     color: #FFFFFF;
+    padding-bottom: 100px;
+    height: 90px;
 }
 /***** End of Footer Styling *****/
 
