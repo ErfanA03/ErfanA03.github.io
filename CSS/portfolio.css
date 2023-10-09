@@ -446,6 +446,17 @@ button:hover, .form-container .btn:hover {
 }
 /***** End of Contact Form Styling *****/
 
+/***** Footer Styling *****/
+#footer {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+/***** End of Footer Styling *****/
+
+
+
+
+
 /***** Media Query Section *****/
 /*Media rules for paragraph font size for different screen sizes*/
 @media screen and (max-width: 527px) {
