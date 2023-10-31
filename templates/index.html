@@ -4,14 +4,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
-        <title>My Personal Portfolio!</title>
-        <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
-        <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+        <title>Portfolio</title>
+        <link rel="shortcut icon" type="img/jpg" href="../static/images/coding_icon.png">
+        <link rel="stylesheet" type="text/css" href="../static/css/portfolio.css">
     </head>
 
     <!--Body-->
     <body class="Background">
-        
+
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
@@ -30,14 +30,14 @@
         <!--Background video-->
         <div id="Home">
             <video autoplay muted loop id="Typing_Video">
-                <source src="images/video/revolve.mp4" type="video/mp4">
+                <source src="../static/videos/revolve.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
         </div>
 
         <!--Video text-->
         <div class="Video_Text">
-            <h1 class="white-text">Erfan's Portfolio!</h1>
+            <h1 class="white-text">Welcome to my portfolio!</h1>
             <strong>
                 <p class="center">
                     <q>Below the surface of the machine, the program moves. Without effort, it expands and contracts.
@@ -46,7 +46,7 @@
                     </q>
                     <br> -Master Yuan-Ma, The Book of Programming.
                     <br>
-                    <br>Hi there, Welcome! My name is Erfan (pronounced, "Err-fon"), I'm a student currently attending The Tech Academy and this is my portfolio website I built showcasing my projects on GitHub.
+                    <br>Hi there, Welcome! My name is Erfan (pronounced "Err-fon"), I'm a student currently attending The Tech Academy and this is my portfolio website I built showcasing my projects on GitHub.
                     <br>
                     <br>Enjoy!
                 </p>
@@ -55,37 +55,37 @@
 
          <!-- Slideshow section added -->
          <div id="Slideshow">
-            <div id="Slideshow_Background"> 
+            <div id="Slideshow_Background">
                 <div id="Slideshow_Container">
                     <!-- Slide 1 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/photo_OfMe.jpg" alt="Picture of myself">
+                        <img class="Slideshow_Images" src="../static/images/photo_OfMe.jpg" alt="Picture of myself">
                         <div class="text">I'm available to assist you on your next team project!</div>
                     </div>
                     <!-- Slide 2 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                        <img class="Slideshow_Images" src="../static/images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
                         <div class="text">I am an entry-level, full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
                     </div>
                     <!-- Slide 3 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                        <img class="Slideshow_Images" src="../static/images/Python.png" alt="Python logo">
                         <div class="text">the popular programming language Python,</div>
                     </div>
                     <!-- Slide 4 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <img class="Slideshow_Images" src="../static/images/C_Sharp_and_Dot_NET.png" alt="C# logo">
                         <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
                     </div>
                     <!-- Slide 5 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                        <img class="Slideshow_Images" src="../static/images/SQL_and_Database.jpg" alt="SQL logo">
                         <div class="text">back end development, databases and SQL.</div>
                     </div>
                     <!-- Slide 6 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/giphy.gif" alt="Programming gif"> 
-                        <div id="contact_text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                        <img class="Slideshow_Images" src="../static/images/giphy.gif" alt="Programming gif">
+                        <div id="contact_text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
                     </div>
                     <!-- Previous and next buttons -->
                     <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
@@ -97,10 +97,10 @@
                 <div style="text-align: center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <span class="dot" onclick="currentSlide(4)"></span> 
-                    <span class="dot" onclick="currentSlide(5)"></span> 
-                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@
         <div class="Row" id="About">
             <!--Left column-->
             <div class="Column_2">
-                <img src="images/selfie.jpg" alt="Selfie of Astronaut">
+                <img src="../static/images/selfie.jpg" alt="Selfie of astronaut">
             </div>
             <!--Right column-->
             <div class="Column_1">
@@ -148,13 +148,13 @@
                         <li>Check Files GUI</li>
                         <li>Bank Account</li>
                     </ul>
-                         
+
                     <p class="center"><a href="https://github.com/ErfanA03" target="_blank">GitHub</a></p>
                 </p>
             </div>
             <!--Right column-->
             <div class="Column_2">
-                <a href="https://github.com/ErfanA03" target="_blank"><img src="images/github.png" alt="GitHub Logo"></a>
+                <a href="https://github.com/ErfanA03" target="_blank"><img src="../static/images/github.png" alt="GitHub Logo"></a>
             </div>
         </div>
 
@@ -168,11 +168,11 @@
                        <input type="text" placeholder="Type your name here" name="name" required>
                      <label for="phone"><b>Phone</b></label>
                        <input type="text" placeholder="Type your phone number here" name="phone">
-                     <label for="email"><b>Email</b></label>		
+                     <label for="email"><b>Email</b></label>
                        <input type="text" placeholder="Type your email address here" name="email" required>
                      <label for="message"><b>Message</b></label>
                        <input type="text" placeholder="Type your message here" name="message">
-          
+
                      <button type="submit" class="btn">SUBMIT</button>
                      <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                  </form>
@@ -183,6 +183,6 @@
         <footer id="footer">
             <p class="center">Contact - Email: erfanarsin99@outlook.com | <a href="https://github.com/ErfanA03" target="_blank">GitHub</a></p>
         </footer>
-        <script src="js/sample_portfolio.js"></script>
+        <script src="../static/js/sample_portfolio.js"></script>
     </body>
 </html>
