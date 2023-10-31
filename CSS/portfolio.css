@@ -47,7 +47,7 @@ h1:hover {
 /* Paragraph elements */
 p {
     font-family: Perpetua, Rockwell Extra Bold;
-    text-align: justify; /* This justifies the text within paragraph elements */
+    text-align: left; /* This justifies the text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
     font-size: 2.5vw; /* Relative font sizing equal to 2.5% of the viewport width */
     padding-left: 1vw; /* Relative padding equal to 1% of the viewport width */
@@ -58,6 +58,11 @@ p {
 p:hover {
     transition: transform 1s; /* This makes the transform effect last 1 second */
 	transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
+}
+
+li:hover {
+    transition: transform 1s; /* This makes the transform effect last 1 second */
+	transform: scale(1.01); /* This makes the list items increase slightly in size when hovered over */
 }
 
 /* Center class - this applies to all centered text */
