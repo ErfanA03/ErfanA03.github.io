@@ -78,9 +78,9 @@ li:hover {
 
 /* Anchor elements */
 a {
-    color: blue; /* This ensures all links are blue */
+    color: black; /* This ensures all links are black */
     cursor: pointer; /* This ensures all links change the mouse to a pointer when hovered over or clicked */
-    text-decoration: underline; /* This ensures all links are underlined */
+    text-decoration: none; /* This ensures all links have no styling whatsoever */
 }
 
 /* Quotation elements */
@@ -106,7 +106,6 @@ img:hover {
 /*Styling for footer element */
 footer {
     padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: white;
 }
 /***** End of General Styling *****/
 
@@ -453,10 +452,11 @@ button:hover, .form-container .btn:hover {
 
 /***** Footer Styling *****/
 #footer {
-    background-color: #000000;
-    color: #FFFFFF;
-    padding-bottom: 100px;
-    height: 90px;
+    color: white;
+}
+
+#footer_link {
+    color: blue;
 }
 /***** End of Footer Styling *****/
 
