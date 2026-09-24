@@ -1,346 +1,487 @@
 <!DOCTYPE html>
-<html>
-  <!--Head-->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Portfolio</title>
-    <link
-      rel="shortcut icon"
-      type="img/jpg"
-      href="./static/images/coding_icon.png"
-    />
-    <link rel="stylesheet" type="text/css" href="./static/css/portfolio.css" />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Body-->
-  <body class="Background">
-    <!--Navbar-->
-    <div class="Navbar">
-      <a class="active" href="#Home">Home</a>
-      <!-- New section added -->
-      <a href="#Slideshow">Slideshow</a>
-      <a href="#About">About</a>
-      <a href="#GitHub">Projects</a>
-      <a href="https://www.linkedin.com/in/erfanarsin/" target="_blank" rel="noopener noreferrer"
-        >LinkedIn</a
-      >
-      <a href="https://docs.google.com/document/d/1-rgxcYuDnl-GeY5tAc-pwiUYoFnt-Oznt4DwPoB-FMA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-      <!-- Onclick and ondblclick functions added to open and close the contact form -->
-      <a onclick="openForm()" ondblclick="closeForm()" class="contact"
-        >Contact</a
-      >
-    </div>
+    <title>Erfan Arsin | Software Developer</title>
 
-    <!--Breaks inserted to add space between navbar and the first heading-->
-    <br />
-    <br />
+    <meta
+        name="description"
+        content="Erfan Arsin — Computer Science student and software developer."
+    >
 
-    <!--Background video-->
-    <div id="Home">
-      <video autoplay muted loop id="Typing_Video">
-        <source src="./static/videos/revolve.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </video>
-    </div>
+</head>
 
-    <!--Video text-->
-    <div class="Video_Text">
-      <h1 class="white-text">Welcome to my portfolio!</h1>
-      <strong>
-        <p class="center">
-          <q
-            >Below the surface of the machine, the program moves. Without
-            effort, it expands and contracts. <br />
-            In great harmony, electrons scatter and regroup. The forms on the
-            monitor are but ripples on the water. <br />The essence stays
-            invisibly below.
-          </q>
-          <br />
-          -Master Yuan-Ma, The Book of Programming.
-          <br />
-          <br />Hi there, Welcome! My name is Erfan (pronounced "Err-fon"), I'm
-          a student currently attending The Tech Academy and this is my
-          portfolio website I built showcasing my projects on GitHub.
-          <br />
-          <br />Enjoy!
-        </p>
-      </strong>
-    </div>
+<body>
 
-    <!-- Slideshow section added -->
-    <div id="Slideshow">
-      <div id="Slideshow_Background">
-        <div id="Slideshow_Container">
-          <!-- Slide 1 of 6 -->
-          <div class="mySlides fade">
-            <img
-              class="Slideshow_Images"
-              src="./static/images/photo_OfMe.jpg"
-              alt="Picture of myself"
-            />
-            <div class="text">
-              I'm available to assist you on your next team project!
+<div class="portfolio">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div>
+
+            <a href="#home">
+                <div class="name">Erfan Arsin</div>
+            </a>
+
+            <div class="title">
+                Computer Science Student
             </div>
-          </div>
-          <!-- Slide 2 of 6 -->
-          <div class="mySlides fade">
-            <img
-              class="Slideshow_Images"
-              src="./static/images/HTML_CSS_and_JavaScript.jpeg"
-              alt="HTML, CSS, and JS logos"
-            />
-            <div class="text">
-              I am an entry-level, full-stack software developer,<br />
-              trained in:<br />HTML, CSS, JavaScript,
-            </div>
-          </div>
-          <!-- Slide 3 of 6 -->
-          <div class="mySlides fade">
-            <img
-              class="Slideshow_Images"
-              src="./static/images/Python.png"
-              alt="Python logo"
-            />
-            <div class="text">the popular programming language Python,</div>
-          </div>
-          <!-- Slide 4 of 6 -->
-          <div class="mySlides fade">
-            <img
-              class="Slideshow_Images"
-              src="./static/images/C_Sharp_and_Dot_NET.png"
-              alt="C# logo"
-            />
-            <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
-          </div>
-          <!-- Slide 5 of 6 -->
-          <div class="mySlides fade">
-            <img
-              class="Slideshow_Images"
-              src="./static/images/SQL_and_Database.jpg"
-              alt="SQL logo"
-            />
-            <div class="text">back end development, databases and SQL.</div>
-          </div>
-          <!-- Slide 6 of 6 -->
-          <div class="mySlides fade">
-            <img
-              class="Slideshow_Images"
-              src="./static/images/giphy.gif"
-              alt="Programming gif"
-            />
-            <div id="contact_text">
-              <a class="white-text contact" onclick="openForm()"
-                >Contact me now!</a
-              >
-            </div>
-          </div>
-          <!-- Previous and next buttons -->
-          <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+            <p class="tagline">
+                Building software, learning continuously,
+                and exploring the intersection of technology
+                and real-world problems.
+            </p>
+
+            <nav class="navigation">
+
+                <a href="#about">ABOUT</a>
+
+                <a href="#experience">EXPERIENCE</a>
+
+                <a href="#projects">PROJECTS</a>
+
+                <a href="#skills">SKILLS</a>
+
+                <a href="#contact">CONTACT</a>
+
+            </nav>
+
         </div>
-        <br />
-        <!-- Adds a space between the slideshow images and the dots -->
 
-        <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
-        <div style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-          <span class="dot" onclick="currentSlide(6)"></span>
+
+        <div class="socials">
+
+            <a href="https://github.com/" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="mailto:your@email.com">
+                Email
+            </a>
+
         </div>
-      </div>
-    </div>
 
-    <!--About section-->
-    <div class="Row" id="About">
-      <!--Left column-->
-      <div class="Column_2">
-        <img src="./static/images/selfie.jpg" alt="Selfie of astronaut" />
-      </div>
-      <!--Right column-->
-      <div class="Column_1">
-        <h1>About Me!</h1>
-        <p>
-          I am a graduate of
-          <a href="https://www.learncodinganywhere.com" target="_blank"
-            >The Tech Academy</a
-          >’s Software Developer Boot Camp, and trained in the following
-          languages: HTML, CSS, JavaScript, SQL, Python, Django, C#, and
-          ASP.NET. <br /><br />
-          Outside the academy I enjoy hobbies like: photography,
-          reading(currently reading Dune), working out, and skiing. Upon
-          graduating, I will have the skillset of a full-stack web developer and
-          I would love to help work with you on your next project.
-          <a href="#Contact">Contact</a> me below!
-        </p>
-      </div>
-    </div>
+    </aside>
 
-    <!--GitHub section-->
-    <div class="Row" id="GitHub">
-      <!--Left column-->
-      <div class="Column_1">
-        <h1>GitHub</h1>
-        <p>
-          Below is my GitHub profile where I have created many different
-          projects including:
-        </p>
-        <h3>
-          <a
-            href="https://github.com/ErfanA03/html_css_projects"
-            target="_blank"
-            >HTML & CSS</a
-          >
-        </h3>
-        <ul>
-          <li>
-            <a
-              href="https://github.com/ErfanA03/html_css_projects/tree/main/project"
-              target="_blank"
-              >Space Station Site</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/ErfanA03/html_css_projects/blob/main/bootstrap4_project/electricians_academy.html"
-              target="_blank"
-              >Electrician Trade School Site</a
-            >
-          </li>
-        </ul>
 
-        <h3>
-          <a
-            href="https://github.com/ErfanA03/javascript_projects"
-            target="_blank"
-            >JavaScript</a
-          >
-        </h3>
-        <ul>
-          <li>
-            <a
-              href="https://github.com/ErfanA03/javascript_projects/tree/main/Pizza_project"
-              target="_blank"
-              >Pizza Menu</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/ErfanA03/javascript_projects/tree/main/TicTacToe"
-              target="_blank"
-              >Tic-Tac-Toe Game</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/ErfanA03/javascript_projects/tree/main/Calculator"
-              target="_blank"
-              >Calculator</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/ErfanA03/todo_app" target="_blank"
-              >Task Manager App</a
-            >
-          </li>
-        </ul>
+    <!-- =========================
+         MAIN
+    ========================== -->
 
-        <h3>
-          <a href="https://github.com/ErfanA03/Python-Projects" target="_blank"
-            >Python</a
-          >
-        </h3>
-        <ul>
-          <li>
+    <main>
+
+        <!-- HERO -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-small">
+                Hi, my name is
+            </div>
+
+            <h1>
+                Erfan Arsin.
+            </h1>
+
+            <h2>
+                I build things for the web.
+            </h2>
+
+            <p>
+                I'm a Computer Science student interested in
+                software development, artificial intelligence,
+                and building useful technology. I enjoy turning
+                ideas into functional, intuitive applications.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="button">
+                    View My Work
+                </a>
+
+                <a href="resume.pdf" target="_blank" class="button">
+                    Resume
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about" class="about">
+
+            <h2 class="section-title">
+                About
+            </h2>
+
+            <p>
+                I'm currently studying
+                <span class="highlight">Computer Science</span>
+                and developing my skills through personal projects
+                and hands-on experimentation.
+            </p>
+
+            <p>
+                I enjoy working with web technologies and learning
+                how software works from the ground up. My current
+                interests include JavaScript, application development,
+                artificial intelligence, and emerging technologies.
+            </p>
+
+            <p>
+                Outside of programming, I'm constantly looking for
+                new things to learn and new problems to solve.
+            </p>
+
+        </section>
+
+
+        <!-- EXPERIENCE -->
+
+        <section id="experience">
+
+            <h2 class="section-title">
+                Experience
+            </h2>
+
+            <div class="experience-item">
+
+                <div class="date">
+                    2026 — PRESENT
+                </div>
+
+                <div class="experience-content">
+
+                    <h3>
+                        Computer Science Student
+                    </h3>
+
+                    <p>
+                        Developing programming fundamentals,
+                        building projects, and studying computer
+                        science concepts.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="experience-item">
+
+                <div class="date">
+                    2025 — 2026
+                </div>
+
+                <div class="experience-content">
+
+                    <h3>
+                        Independent Developer
+                    </h3>
+
+                    <p>
+                        Building personal software projects while
+                        learning modern development tools,
+                        version control, and web technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section id="projects">
+
+            <h2 class="section-title">
+                Projects
+            </h2>
+
+            <div class="projects">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project">
+
+                    <div class="project-image">
+                        PROJECT SCREENSHOT
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Project One
+                        </h3>
+
+                        <p>
+                            A web application designed to solve
+                            a specific problem. Replace this
+                            description with what your project
+                            actually does.
+                        </p>
+
+                        <div class="technologies">
+
+                            <span class="technology">
+                                HTML
+                            </span>
+
+                            <span class="technology">
+                                CSS
+                            </span>
+
+                            <span class="technology">
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#" target="_blank">
+                                ↗ Live Demo
+                            </a>
+
+                            <a href="#" target="_blank">
+                                ↗ GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project">
+
+                    <div class="project-image">
+                        PROJECT SCREENSHOT
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Project Two
+                        </h3>
+
+                        <p>
+                            Another application demonstrating
+                            your ability to work with APIs,
+                            JavaScript, responsive design,
+                            or another technology.
+                        </p>
+
+                        <div class="technologies">
+
+                            <span class="technology">
+                                JavaScript
+                            </span>
+
+                            <span class="technology">
+                                API
+                            </span>
+
+                            <span class="technology">
+                                CSS
+                            </span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#" target="_blank">
+                                ↗ Live Demo
+                            </a>
+
+                            <a href="#" target="_blank">
+                                ↗ GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project">
+
+                    <div class="project-image">
+                        PROJECT SCREENSHOT
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Project Three
+                        </h3>
+
+                        <p>
+                            A more advanced project demonstrating
+                            your ability to design, build, and
+                            deploy a complete application.
+                        </p>
+
+                        <div class="technologies">
+
+                            <span class="technology">
+                                JavaScript
+                            </span>
+
+                            <span class="technology">
+                                Git
+                            </span>
+
+                            <span class="technology">
+                                GitHub
+                            </span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#" target="_blank">
+                                ↗ Live Demo
+                            </a>
+
+                            <a href="#" target="_blank">
+                                ↗ GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section id="skills">
+
+            <h2 class="section-title">
+                Skills
+            </h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-category">
+
+                    <h3>
+                        Languages
+                    </h3>
+
+                    <p>
+                        HTML<br>
+                        CSS<br>
+                        JavaScript<br>
+                        Python<br>
+                        Swift
+                    </p>
+
+                </div>
+
+
+                <div class="skill-category">
+
+                    <h3>
+                        Technologies
+                    </h3>
+
+                    <p>
+                        Git<br>
+                        GitHub<br>
+                        VS Code<br>
+                        APIs<br>
+                        Responsive Design
+                    </p>
+
+                </div>
+
+
+                <div class="skill-category">
+
+                    <h3>
+                        Currently Learning
+                    </h3>
+
+                    <p>
+                        React<br>
+                        Data Structures<br>
+                        Algorithms<br>
+                        AI / Machine Learning
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact" class="contact">
+
+            <h2>
+                Let's connect.
+            </h2>
+
+            <p>
+                I'm always interested in connecting with other
+                developers, learning about new opportunities,
+                and working on interesting projects.
+            </p>
+
             <a
-              href="https://github.com/ErfanA03/Python-Projects/tree/main/pythonWithTkinter/tkinterWithSqlite/StudentTrackingAssignment"
-              target="_blank"
-              >Phonebook</a
+                href="mailto:your@email.com"
+                class="button"
             >
-          </li>
-          <li>
-            <a
-              href="https://github.com/ErfanA03/Python-Projects/tree/main/pythonChallenges/fileTransferAssignments"
-              target="_blank"
-              >Check Files GUI</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/ErfanA03/Python-Projects/tree/main/Django_Checkbook_Project"
-              target="_blank"
-              >Bank Account</a
-            >
-          </li>
-        </ul>
-      </div>
+                Get In Touch
+            </a>
 
-      <!--Right column-->
-      <div class="Column_2">
-        <a href="https://github.com/ErfanA03" target="_blank"
-          ><img src="./static/images/github.png" alt="GitHub Logo"
-        /></a>
-      </div>
-    </div>
+        </section>
 
-    <!-- Contact form -->
-    <div id="Contact">
-      <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-      <div class="form-popup" id="myForm">
-        <form
-          action="https://formspree.io/info@learncodinganywhere.com"
-          method="POST"
-          class="form-container"
-        >
-          <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-          <h1>Contact</h1>
-          <label for="name"><b>Name</b></label>
-          <input
-            type="text"
-            placeholder="Type your name here"
-            name="name"
-            required
-          />
-          <label for="phone"><b>Phone</b></label>
-          <input
-            type="text"
-            placeholder="Type your phone number here"
-            name="phone"
-          />
-          <label for="email"><b>Email</b></label>
-          <input
-            type="text"
-            placeholder="Type your email address here"
-            name="email"
-            required
-          />
-          <label for="message"><b>Message</b></label>
-          <input
-            type="text"
-            placeholder="Type your message here"
-            name="message"
-          />
 
-          <button type="submit" class="btn">SUBMIT</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">
-            CLOSE
-          </button>
-        </form>
-      </div>
-    </div>
+        <!-- FOOTER -->
 
-    <!--Footer section-->
-    <footer id="footer">
-      <p class="center">
-        Contact - Email: erfanarsin99@outlook.com |
-        <a id="footer_link" href="https://github.com/ErfanA03" target="_blank"
-          >GitHub</a
-        >
-      </p>
-    </footer>
-    <script src="./static/js/sample_portfolio.js"></script>
-  </body>
+        <footer>
+
+            <p>
+                Designed & Built by Erfan Arsin
+            </p>
+
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
 </html>
